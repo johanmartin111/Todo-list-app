@@ -1,0 +1,17 @@
+<div class="container py-3">
+  
+  <!-- FORM -->
+  <form class="todo-edit--form" (ngSubmit)="updateTodo()">
+    <h2>Editar tarea</h2>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="Introduce el texto de la tarea" type="text" name="title" [(ngModel)]="todo.title">
+    </div>
+
+    <div class="text-right">
+      <a routerLink="/todos" class="btn btn-light mr-3">Cancelar</a>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+  </form>
+
+</div>
