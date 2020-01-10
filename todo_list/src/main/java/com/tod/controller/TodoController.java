@@ -22,7 +22,7 @@ import javax.validation.constraints.NotNull;
 
 @RestController
 @RequestMapping(value = "/todo")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class TodoController {
 	
 	@Autowired
